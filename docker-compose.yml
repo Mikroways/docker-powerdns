@@ -8,8 +8,5 @@ services:
       - '5300:53'
       - '5300:53/udp'
       - '8081:8081'
-    environment:
-      SOCKET_DIR: /var/run/pdns
     volumes:
       - powerdns-db:/var/lib/powerdns
-      - /var/run/pdns:/var/run/pdns
